@@ -36,3 +36,29 @@ nav > a     {   text-decoration: none;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 0px;
 }
+.main-content{ 
+    display: flex;
+    gap: 20px;
+}
+.main-container   {
+    border: 1px solid;
+    height: 400px;
+  }
+    #main-container-1st {
+        flex: 3;
+}
+    #main-container-2nd{
+        flex:2;
+}
+    #our-package-section>header{height: 200px;
+    text-align: center;
+    align-content: center;
+    background-color: palegreen;
+
+    }
+    .our-package-contain{   
+        border: 1px solid;
+        height: 300px;
+    }
+
+            

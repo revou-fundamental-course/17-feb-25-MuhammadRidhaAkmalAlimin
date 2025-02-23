@@ -38,16 +38,23 @@ nav > a     {   text-decoration: none;
 }
 .main-content{ 
     display: flex;
-    gap: 20px;
-}
+    gap: 20px;}
+    main>header{text-align: center;}
+
+
 .main-container   {
     border: 1px solid;
     height: 400px;
   }
     #main-container-1st {
+        text-align: center;
+        align-content: center;
         flex: 3;
+        
 }
     #main-container-2nd{
+        text-align: center;
+        align-content: center;
         flex:2;
 }
     #our-package-section>header{height: 200px;
@@ -61,4 +68,15 @@ nav > a     {   text-decoration: none;
         height: 300px;
     }
 
+    #call-us-section>header{height: 200px;
+        text-align: center;
+        align-content: center;
+        background-color: burlywood;
+    
+        }
+        .call-us-contain{   
+            border: 1px solid;
+            height: 300px;
+        }
+    
             

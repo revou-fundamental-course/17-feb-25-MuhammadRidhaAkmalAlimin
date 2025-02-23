@@ -1,4 +1,8 @@
-/* css, masih awal project external */
+/* css, masih awal project external 
+https://fontawesome.com/icons icon yg diperbolehkan
+DILARANG PAKAI FRAMEWORK
+google font 
+*/
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -45,6 +49,8 @@ nav > a     {   text-decoration: none;
 .main-container   {
     border: 1px solid;
     height: 400px;
+    text-align: center;
+    align-content: center;
   }
     #main-container-1st {
         text-align: center;
@@ -52,10 +58,10 @@ nav > a     {   text-decoration: none;
         flex: 3;
         
 }
-    #main-container-2nd{
+    #main-container-2nd {
         text-align: center;
         align-content: center;
-        flex:2;
+        flex: 2;
 }
     #our-package-section>header{height: 200px;
     text-align: center;
@@ -63,9 +69,11 @@ nav > a     {   text-decoration: none;
     background-color: palegreen;
 
     }
-    .our-package-contain{   
+    .our-package-content{   
         border: 1px solid;
         height: 300px;
+        text-align: center;
+        align-content: center;
     }
 
     #call-us-section>header{height: 200px;
@@ -74,9 +82,11 @@ nav > a     {   text-decoration: none;
         background-color: burlywood;
     
         }
-        .call-us-contain{   
+        .call-us-content{   
             border: 1px solid;
             height: 300px;
+            text-align: center;
+            align-content: center;
         }
     
             

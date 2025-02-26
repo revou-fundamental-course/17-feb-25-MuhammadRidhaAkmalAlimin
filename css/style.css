@@ -59,7 +59,7 @@ nav > a     {   text-decoration: none;
         
 }
     #main-container-2nd {
-        text-align: center;
+        text-align: left;
         align-content: center;
         flex: 2;
 }
@@ -88,5 +88,7 @@ nav > a     {   text-decoration: none;
             text-align: center;
             align-content: center;
         }
-    
+    #error-message {display: none;
+                    color: red; 
+    }
             

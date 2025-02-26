@@ -92,3 +92,13 @@ nav > a     {   text-decoration: none;
                     color: red; 
     }
             
+    @media (max-width: 768px) {
+        .main-header nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-container {
+            flex-direction: column;
+        }
+    }
+    

@@ -1,22 +1,38 @@
-// ini JS external 
-document.getElementById("ContactForm").addEventListener("submit", function(event) {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const orderType = document.getElementById("OrderType").value;
+// ini JS external
+console.log('console');
 
-    if (name === "" || email === "" || orderType === "") {
-        event.preventDefault(); // Mencegah form dikirim jika ada input kosong
-        document.getElementById("error-message").style.display = "block";
-    } else {
-        document.getElementById("error-message").style.display = "none";
-    }
-});
-
-let slideIndex = 0;
-function showSlides() {
-    let slides = document.querySelectorAll(".slide");
-    slides.forEach(slide => slide.style.display = "none");
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].style.display = "block";
+function ValidationForm() {
+    let NameInput = document.getElementById('name-input');
+    ;
+     if (NameInput.value == "") {alert("Nama Tidak Boleh Kosong")}
+     else {
+        alert("Halo")+ NameInput.value};
 }
-setInterval(showSlides, 3000);
+// global declarasi
+    let IndexBanner = 0;
+    ShowBanner();
+//penambahan incrementasi index banner 
+function NextBanner () {
+    IndexBanner += 1;
+    ShowBanner();
+}
+
+
+function ShowBanner () {
+    let banner = document.getElementsByClassName('main-banner');
+    // if conditional supaya bisa memory barunya terupdate index banner 
+    if (IndexBanner > banner.length- 1) {
+        IndexBanner = 0;
+    }
+    
+    //array loop display = hide
+    for (let i=0; i < banner.length;i++) 
+        {banner[i].style.display='none';
+
+        }
+    //Showe-d banner
+        banner[IndexBanner].style.display ='block';
+}
+ //function 
+ setInterval(NextBanner, 3000);
+ 

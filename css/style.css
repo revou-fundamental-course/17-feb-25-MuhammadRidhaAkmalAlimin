@@ -8,6 +8,20 @@ google font
     justify-content: space-between;
     align-items: center;
 }
+.main-banner {    
+    
+    height: 300px;
+    background-image: url(/assets/AutoSlide1.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+.auto-slide1 {background-image: url(/assets/AutoSlide1.jpg)
+ ; }  
+.auto-slide2 {background-image: url(/assets/AutoSlide2.jpg) ;  
+                
+            }  
+.auto-slide3 {background-image: url(/assets/AutoSlide3.jpg) ; 
+                  }  
 .logo-company {
                 border: 1px;
                 border-color:  forestgreen;

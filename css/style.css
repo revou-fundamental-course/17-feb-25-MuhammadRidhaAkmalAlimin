@@ -28,9 +28,9 @@ background-color: rgb(255, 255, 255);}
     background-size: cover;
     
 }
-.auto-slide1 {background-image: url(/assets/AutoSlide1.jpg) ;}  
-.auto-slide2 {background-image: url(/assets/AutoSlide2.jpg) ;}  
-.auto-slide3 {background-image: url(/assets/AutoSlide3.jpg) ;}  
+.auto-slide1 {background-image: url(../assets/AutoSlide1.jpg) ;}  
+.auto-slide2 {background-image: url(../assets/AutoSlide2.jpg) ;}  
+.auto-slide3 {background-image: url(../assets/AutoSlide3.jpg) ;}  
 .logo-company {
                 border: 1px;
                 border-color:  rgb(168, 172, 168);

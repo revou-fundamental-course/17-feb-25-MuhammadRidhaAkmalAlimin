@@ -1,5 +1,4 @@
 // ini JS external
-console.log('console');
 //form tidak boleh,  buat sendiri
 // function ValidationForm() {
 //     let NameInput = document.getElementById('name-input');

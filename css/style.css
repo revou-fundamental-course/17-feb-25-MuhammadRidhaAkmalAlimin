@@ -8,7 +8,8 @@ google font
 body{ font-family: "Manrope", serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;}
+    font-style: normal;
+background-color: rgb(255, 255, 255);}
     
 .main-header {
     display: flex;
@@ -25,21 +26,27 @@ body{ font-family: "Manrope", serif;
     background-image: url(/assets/AutoSlide1.jpg);
     background-position: center;
     background-size: cover;
+    
 }
 .auto-slide1 {background-image: url(/assets/AutoSlide1.jpg) ;}  
 .auto-slide2 {background-image: url(/assets/AutoSlide2.jpg) ;}  
 .auto-slide3 {background-image: url(/assets/AutoSlide3.jpg) ;}  
 .logo-company {
                 border: 1px;
-                border-color:  forestgreen;
+                border-color:  rgb(168, 172, 168);
                 height: 100px;
                 width: 100px;
-                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXm-YRdMLuraIBmK79gWcx3c1Ys0AtPwmoRQ&amp;s);
+                background-image: url(https://img.freepik.com/premium-vector/logo-lorem-ipsum-slogan-design-art-template_642953-198.jpg?w=740);
                 background-size: 100% 100%;
                 border-radius: 50%; }
                 
                 /* navigasi header */
 nav     {  
+    nav {
+        position: relative;
+        z-index: 1000; 
+    }
+    
     display: flex; 
     }
 nav > a     {   text-decoration: none;
@@ -69,25 +76,78 @@ nav > a     {   text-decoration: none;
     main>header{text-align: center;}
 
 
-.main-container   {
-    border: 1px solid;
-    height: 400px;
-    text-align: center;
-    align-content: center;
-  }
-    #main-container-1st {
+    .main-container {
+        width: 100%;
+        max-width: 400px; /* Batasi lebar agar tidak terlalu besar */
+        background-color: #f8f8f8; /* Warna background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto; /* Tengah secara horizontal */
+    }
+    
+    /* Header */
+    .main-container header h2 {
         text-align: center;
-        align-content: center;
-        flex: 3;
-        padding: 4px;
+        color: #333;
+        font-size: 20px;
+    }
+    
+    /* Styling untuk paragraf */
+    .main-container p {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    /* Styling untuk form */
+    .main-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Label */
+    .main-container label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    /* Input field */
+    .main-container input,
+    .main-container select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    /* Button */
+    .main-container button {
+        background-color: #007bff; /* Warna biru */
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .main-container button:hover {
+        background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+    }
+    
+    /* Responsif untuk layar kecil */
+    @media (max-width: 600px) {
+        .main-container {
+            width: 90%;
+        }
+    }
         
-}
-    #main-container-2nd {
-        text-align: left;
-        align-content: center;
-        flex: 2;
-        
-}
+
     #our-package-section>header{height: 200px;
     text-align: center;
     align-content: center;
@@ -101,18 +161,41 @@ nav > a     {   text-decoration: none;
         align-content: center;
     }
 
-    #call-us-section>header{height: 200px;
+    .call-section {
         text-align: center;
-        align-content: center;
-        background-color: rgb(250, 247, 243);
+        padding: 50px 20px;
+        background-color: #007bff;
+        color: white;
+        max-width: 800px;  /* Agar tidak terlalu melebar */
+        margin: 0 auto;  /* Biar di tengah */
+        border-radius: 10px;
+    }
     
-        }
-        .call-us-content{   
-            border: 1px solid;
-            height: 300px;
-            text-align: center;
-            align-content: center;
-        }
+    .contact-info p {
+        margin: 5px 0;
+    }
+    
+    .contact-info a {
+        color: #ffeb3b;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .call-btn {
+        background-color: #ffcc00; /* Warna lebih terang */
+        color: #000;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .call-btn:hover {
+        background-color: #e6b800; /* Warna lebih gelap saat hover */
+    }
+    
     #error-message {display: none;
                     color: red; 
     }
@@ -218,4 +301,96 @@ nav > a     {   text-decoration: none;
                     padding: 4px;
                 }
 
-    
+    /* ourpackage generated by gpt */ 
+                .package-section {
+                    text-align: center;
+                    padding: 50px 20px;
+                    background-color: #f9f9f9;
+                }
+                
+                .package-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+                
+                .package {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    width: 250px;
+                }
+                
+                .package h3 {
+                    margin-bottom: 10px;
+                }
+                
+                .package p {
+                    font-size: 14px;
+                    color: gray;
+                }
+                
+                .package span {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+                
+                .package button {
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                
+                .package button:hover {
+                    background-color: #0056b3;
+                }
+                .call-section {
+                    text-align: center;
+                    padding: 50px 20px;
+                    background-color: #007bff;
+                    color: white;
+                }
+                
+                .call-section h2 {
+                    margin-bottom: 10px;
+                }
+                
+                .call-section p {
+                    font-size: 16px;
+                }
+                
+                .contact-info {
+                    margin: 20px 0;
+                }
+                
+                .contact-info p {
+                    margin: 5px 0;
+                }
+                
+                .contact-info a {
+                    color: #ffeb3b;
+                    text-decoration: none;
+                }
+                
+                .call-btn {
+                    background-color: #ffeb3b;
+                    color: #007bff;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                
+                .call-btn:hover {
+                    background-color: #ffd700;
+                }
+                

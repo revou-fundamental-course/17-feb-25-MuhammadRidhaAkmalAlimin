@@ -1,12 +1,20 @@
 // ini JS external
 console.log('console');
-
+//form tidak boleh
 function ValidationForm() {
     let NameInput = document.getElementById('name-input');
-    ;
-     if (NameInput.value == "") {alert("Nama Tidak Boleh Kosong")}
-     else {
-        alert("Halo")+ NameInput.value};
+    let email = document.getElementById('email-input');
+    let OrderType = document.getElementById('OrderType');
+
+    if (NameInput.value == "") {
+        alert("Nama Tidak Boleh Kosong");
+    } else if (email.value == "") {
+        alert("Email Tidak Boleh Kosong");
+    } else if (OrderType.value == "") {
+        alert("Tipe Pesanan Tidak Boleh Kosong");
+    } else {
+        alert("Halo " + NameInput.value);
+    }
 }
 // global declarasi
     let IndexBanner = 0;

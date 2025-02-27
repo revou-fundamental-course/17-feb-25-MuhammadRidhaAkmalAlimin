@@ -8,10 +8,8 @@
 </head>
 <body>
     <header class="main-header">    
-        <!-- iki kepala buat atasan content your trust agent perhaps?atau header navigationnnya pakai fungsi nav untuk mengarahkan ke page html lainnya?-->  
+          <!--header  -->
         <div class="logo-company"></div>
-      
-        
         <nav>
             <a href="#" class="no-border-radius-left">Beranda</a>
             <a href="#our-package-section" class="no-border-radius">Produk Kami</a>
@@ -21,7 +19,7 @@
     </header>
     <hr>
         <main>
-            <header>
+            <header class="font-header">
                 <h1>Your Trusted Travel agent</h1>
             
                 <h4>Your happiness is Our happiness</h4>
@@ -50,25 +48,26 @@
                     <aside class="main-container" id="main-container-2nd">
                         <header> <h2>Form Contact Us</h2></header>
                         <p>Tim kami akan membalas form anda maksimal 2x24 jam setelah form terkirim</p>
-                        <form   >
+                        <form  >
                           <div>
                             <label for="name-input">Nama:</label>
                             <input id="name-input" type="text" required >
                           </div>
-                          <!-- <div><label  for="email">E-mail:</label><input id="email" type="email"> </div> -->
-                          <!-- <div><label  for="OrderType">Jenis Pesanan:</label><select id="OrderType"> </div> -->
-                                                 <!-- <option value="" disabled selected>Pilih jenis pesanan</option> -->
-                                                 <!-- <option value="Dine-In">Dine-in</option> -->
-                                                 <!-- <option value="Take Away">Takeaway</option> -->
-                                            <!-- </select><br> -->
+                           <div>
+                            <label  for="email-input">E-mail:</label>
+                            <input id="email-input" type="email" required> 
+                        </div> 
+                           <div>
+                            <label  for="OrderType">Jenis Pesanan:</label>
+                            <select id="OrderType" required> </div> 
+                                                  <option value="" disabled selected>Pilih jenis pesanan</option> 
+                                                  <option value="Dine-In">Dine-in</option> 
+                                                  <option value="Take Away">Takeaway</option> 
+                                             </select><br> 
                                             
                                             <button type="button" onclick="ValidationForm();">Submit</button>
                                             <!-- <p id="error-message">Semua kolom harus diisi!</p> -->
-                                             
-
-                    
-                        
-                        
+                                                      
                         </form>
                     </aside>
                 </section>

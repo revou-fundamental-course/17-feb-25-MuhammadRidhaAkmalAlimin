@@ -3,25 +3,32 @@ https://fontawesome.com/icons icon yg diperbolehkan
 DILARANG PAKAI FRAMEWORK
 google font 
 */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@332&display=swap');
+
+body{ font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;}
+    
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.main-banner {    
     
+    
+}
+
+/* autoslide gambar */
+.main-banner {    
+    background-size: cover;
     height: 300px;
-    background-image: url(/assets/AutoSlide1.jpg); 
+    background-image: url(/assets/AutoSlide1.jpg);
     background-position: center;
     background-size: cover;
 }
-.auto-slide1 {background-image: url(/assets/AutoSlide1.jpg)
- ; }  
-.auto-slide2 {background-image: url(/assets/AutoSlide2.jpg) ;  
-                
-            }  
-.auto-slide3 {background-image: url(/assets/AutoSlide3.jpg) ; 
-                  }  
+.auto-slide1 {background-image: url(/assets/AutoSlide1.jpg) ;}  
+.auto-slide2 {background-image: url(/assets/AutoSlide2.jpg) ;}  
+.auto-slide3 {background-image: url(/assets/AutoSlide3.jpg) ;}  
 .logo-company {
                 border: 1px;
                 border-color:  forestgreen;
@@ -30,6 +37,8 @@ google font
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXm-YRdMLuraIBmK79gWcx3c1Ys0AtPwmoRQ&amp;s);
                 background-size: 100% 100%;
                 border-radius: 50%; }
+                
+                /* navigasi header */
 nav     {  
     display: flex; 
     }
@@ -70,17 +79,19 @@ nav > a     {   text-decoration: none;
         text-align: center;
         align-content: center;
         flex: 3;
+        padding: 4px;
         
 }
     #main-container-2nd {
         text-align: left;
         align-content: center;
         flex: 2;
+        
 }
     #our-package-section>header{height: 200px;
     text-align: center;
     align-content: center;
-    background-color: palegreen;
+    background-color: rgb(250, 255, 250);
 
     }
     .our-package-content{   
@@ -93,7 +104,7 @@ nav > a     {   text-decoration: none;
     #call-us-section>header{height: 200px;
         text-align: center;
         align-content: center;
-        background-color: burlywood;
+        background-color: rgb(250, 247, 243);
     
         }
         .call-us-content{   
@@ -105,14 +116,42 @@ nav > a     {   text-decoration: none;
     #error-message {display: none;
                     color: red; 
     }
-            
-    @media (max-width: 768px) {
-        .main-header nav {
-            display: flex;
-            flex-direction: column;
+            /* portabilitas */
+
+            /* iphone se */
+    @media (max-width: 375px) {
+
+        
+        .main-header {
+            display: flex
+        ;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;}
+       
+    .main-content {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
         }
-        .main-container {
-            flex-direction: column;
+     
         }
-    }
+        #main-container-2nd {
+            font-size: 90%;
+            align-content: center;
+            flex: 2;
+            border-radius: 10px;
+            padding: 4px;
+        }
+        #main-container-1st {
+            text-align: left;
+            align-content: center;
+            flex: 3;
+            border-radius: 10px;
+            padding: 4px;
+        }
+        
+    
+
     
